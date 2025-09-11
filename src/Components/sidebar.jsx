@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import {
   IoIosLogOut,
   IoIosHome,
@@ -40,14 +40,14 @@ const Sidebar = ({ onLogoutClick }) => {
       
       {isOpen && (
         <div
-          className="fixed inset-0 bg-opacity-40 z-40"
+          className="fixed inset-0  bg-black/70 backdrop-blur-none z-40"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
 
       
       <div
-        className={`w-64 bg-gradient-to-b from-purple-100 to-pink-100 shadow-lg h-screen p-6 flex flex-col relative border-r border-purple-200 fixed md:relative z-40 transition-transform duration-300 ease-in-out ${
+        className={`w-64 bg-gradient-to-b from-purple-100 to-pink-100 shadow-lg h-screen p-6 flex flex-col  border-r border-purple-200 fixed md:relative z-40 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
       >
@@ -132,7 +132,6 @@ const Sidebar = ({ onLogoutClick }) => {
           </div>
           <button
             title="Logout"
-            className="text-purple-600 hover:text-purple-800 p-2 rounded-full hover:bg-purple-100 transition-colors duration-300"
             onClick={onLogoutClick}
           >
             <IoIosLogOut size={24} />
