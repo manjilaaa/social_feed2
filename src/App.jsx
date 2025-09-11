@@ -10,7 +10,7 @@ function App() {
   
   return (
     <>
-    <Router  >
+    <Router  basename="/Social_Feed2" >
       <Routes>
         <Route path="/" element={ <Login/>}></Route>
         <Route path="/post" element={<Post/>}></Route>
