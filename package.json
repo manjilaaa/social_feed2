@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://manjilaaa.github.io/Social_Feed2",
+  "homepage": "https://manjilaaa.github.io/social_feed2",
 
   "scripts": {
     "dev": "vite",

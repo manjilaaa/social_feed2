@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
-  base:'/Social_Feed2/',
+  base:'/social_feed2/',
    resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),

@@ -31,7 +31,7 @@ const Sidebar = ({ onLogoutClick }) => {
     <>
     
       <button
-        className="md:hidden fixed top-4 left-4 z-50 bg-purple-600 text-white p-2 rounded-md shadow-lg"
+        className="md:hidden fixed top-4 left-4 z-50 bg-purple-600 text-white p-2 rounded-md shadow-lg cursor-pointer"
         onClick={toggleSidebar}
       >
         {isOpen ? <IoIosClose size={24} /> : <IoIosMenu size={24} />}
@@ -130,7 +130,7 @@ const Sidebar = ({ onLogoutClick }) => {
               </p>
             </div>
           </div>
-          <button
+          <button className="cursor-pointer"
             title="Logout"
             onClick={onLogoutClick}
           >

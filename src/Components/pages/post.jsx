@@ -58,6 +58,7 @@ const Post = () => {
             <div className="flex-grow text-gray-500">
               What's on your mind?
             </div>
+              
             <Link 
               to="/add"
               className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg font-medium hover:from-purple-600 hover:to-pink-600 transition-all"
