@@ -16,11 +16,8 @@ import { Label } from "../ui/label";
 const AddPost = () => {
   const navigate = useNavigate();
   const { mutate: addPostMutation, isLoading } = useAddPost();
-
-
   const [openLogoutDialog, setOpenLogoutDialog] = useState(false);
   const [openPostDialog, setOpenPostDialog] = useState(false);
-
   const {
     register,
     handleSubmit,
@@ -28,8 +25,6 @@ const AddPost = () => {
   } = useForm({
     resolver: zodResolver(addSchema),
   });
-
-
   const handleLogout = () => {
     localStorage.removeItem("userEmail");
     navigate("/");

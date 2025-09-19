@@ -47,7 +47,6 @@ const Login = () => {
               type="text"
               placeholder="Enter your email"
               icon={FaEnvelope}
-             
               register={register}
               name="email"
               formState={{errors}}
@@ -69,7 +68,6 @@ const Login = () => {
             <p className="text-sm text-gray-600">
               Don't have an account?{" "}
               <a
-                
                 className="font-medium text-purple-500 hover:text-purple-600"
               >
                 Sign up
